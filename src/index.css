@@ -8,3 +8,9 @@
 body {
     background-color: #F2F4F4;
 }
+.BR {
+    border-radius: 8px 0 0 8px;
+}
+.BR-2 {
+    border-radius: 0 8px 8px 0
+}

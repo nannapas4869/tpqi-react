@@ -12,6 +12,7 @@ import "./index.css";
 import DIGITAL from "./assets/images/logo.png";
 import "remixicon/fonts/remixicon.css";
 import TestSession from "./pages/TestSession";
+import SaveResultEvaluate from "./pages/SaveResultEvaluate";
 const Layout = () => {
   return (
     <>
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "TestSession", element: <TestSession /> }],
+    children: [{ path: "", element: <TestSession /> }, { path: "SaveResultEvaluate", element: <SaveResultEvaluate/> }],
   },
 ]);
 const App = () => {
