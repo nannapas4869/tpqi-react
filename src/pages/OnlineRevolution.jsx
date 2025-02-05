@@ -14,14 +14,14 @@ const level = [
 ];
 const evaluate = [
   { value: "สัมภาษณ์", label: "สัมภาษณ์" },
-  { value: "เทียบโอนประสบการณ์", label: "เทียบโอนประสบการณ์" },
+  { value: "เทียบโอนประสบการณ์", label: "เทียบโอนประสบการณ์2" },
   { value: "แฟ้มสะสมผลงาน", label: "แฟ้มสะสมผลงาน" },
 ];
 const statuses = [
   { value: "ผ่าน", label: "ผ่าน" },
   { value: "ไม่ผ่าน", label: "ไม่ผ่าน" },
 ];
-export default function TestSession() {
+export default function OnlineRevolution() {
   const [selectedOption, setSelectedOption] = useState(null);
   const data = [
     {
@@ -162,8 +162,8 @@ export default function TestSession() {
     <>
       <div className="container-fluid mx-auto px-8 mt-8">
         <div className="flex flex-row justify-between">
-          <p className="text-xl font-light text-[#212264]">รอบสอบ</p>
-          <p className="text-lg font-light text-[#FF3B30]">รอบสอบ</p>
+          <p className="text-xl font-light text-[#212264]">การประเมินผลแบบออนไลน์</p>
+          <p className="text-lg font-light text-[#FF3B30]">สรุปผลการประเมิน</p>
         </div>
         <div className="w-full bg-white h-screen mt-10 rounded-xl">
           <div className="container-fluid mx-auto px-8 mt-5 p-6">

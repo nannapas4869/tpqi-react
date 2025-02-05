@@ -13,6 +13,9 @@ import DIGITAL from "./assets/images/logo.png";
 import "remixicon/fonts/remixicon.css";
 import TestSession from "./pages/TestSession";
 import SaveResultEvaluate from "./pages/SaveResultEvaluate";
+import OnlineRevolution from "./pages/OnlineRevolution";
+import ShowEvaluateName from "./pages/ShowEvaluateName";
+import SaveResultIndividual from "./pages/SaveResultIndividual";
 const Layout = () => {
   return (
     <>
@@ -41,7 +44,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "", element: <TestSession /> }, { path: "SaveResultEvaluate", element: <SaveResultEvaluate/> }],
+    children: [{ path: "", element: <TestSession /> }, { path: "SaveResultEvaluate", element: <SaveResultEvaluate/> }, { path: "OnlineRevolution", element: <OnlineRevolution/> }, { path: "ShowEvaluateName", element: <ShowEvaluateName/> }, { path: "SaveResultIndividual", element: <SaveResultIndividual/> }],
   },
 ]);
 const App = () => {
