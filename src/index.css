@@ -29,3 +29,13 @@ body {
 .z-50 {
     z-index: 50;
 }
+a {
+    text-decoration: underline;
+    color: blue;
+}
+input[type="radio"] {
+    scale: 1.5;
+}
+.RN {
+    resize: none;
+}

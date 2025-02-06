@@ -16,6 +16,13 @@ import SaveResultEvaluate from "./pages/SaveResultEvaluate";
 import OnlineRevolution from "./pages/OnlineRevolution";
 import ShowEvaluateName from "./pages/ShowEvaluateName";
 import SaveResultIndividual from "./pages/SaveResultIndividual";
+import ShowEvaluateNameResk from "./pages/ShowEvaluateNameResk";
+import SaveResultIndividualReskChecker from "./pages/SaveResultIndividualReskChecker";
+import ReportResk from "./pages/ReportResk";
+import ReportReskChecker from "./pages/ReportReskChecker";
+import ShowEvaluator from "./pages/ShowEvaluator";
+import SettingFile from "./pages/Notification";
+import Notification from "./pages/SettingFile1";
 const Layout = () => {
   return (
     <>
@@ -44,7 +51,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "", element: <TestSession /> }, { path: "SaveResultEvaluate", element: <SaveResultEvaluate/> }, { path: "OnlineRevolution", element: <OnlineRevolution/> }, { path: "ShowEvaluateName", element: <ShowEvaluateName/> }, { path: "SaveResultIndividual", element: <SaveResultIndividual/> }],
+    children: [{ path: "", element: <TestSession /> }, { path: "SaveResultEvaluate", element: <SaveResultEvaluate/> }, { path: "OnlineRevolution", element: <OnlineRevolution/> }, { path: "ShowEvaluateName", element: <ShowEvaluateName/> }, { path: "SaveResultIndividual", element: <SaveResultIndividual/> }, { path: "ShowEvaluateNameResk", element: <ShowEvaluateNameResk/> },{ path: "SaveResultIndividualReskChecker", element: <SaveResultIndividualReskChecker/> },{ path: "ReportResk", element: <ReportResk/> },{ path: "ReportReskChecker", element: <ReportReskChecker/> },{ path: "ShowEvaluator", element: <ShowEvaluator/> },{ path: "SettingFile", element: <SettingFile/> },{ path: "Notification", element: <Notification/> }],
   },
 ]);
 const App = () => {

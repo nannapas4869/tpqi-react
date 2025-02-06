@@ -14,54 +14,11 @@ const options = [
   { value: "ประเมินผลแล้ว", label: "ประเมินผลแล้ว" },
 ];
 
-function ShowEvaluateName() {
-  const [statusText, setStatusText] = useState("ยังไม่ได้ประเมิน");
-  const [statusText2, setStatusText2] = useState("ยังไม่ได้ประเมิน");
-  const [statusText3, setStatusText3] = useState("ยังไม่ได้ประเมิน");
-  const [statusText4, setStatusText4] = useState("ยังไม่ได้ประเมิน");
-  const [statusText5, setStatusText5] = useState("ยังไม่ได้ประเมิน");
-  const [statusText6, setStatusText6] = useState("ยังไม่ได้ประเมิน");
-  const [statusText7, setStatusText7] = useState("ยังไม่ได้ประเมิน");
-  const [statusText8, setStatusText8] = useState("ยังไม่ได้ประเมิน");
-  const [statusText9, setStatusText9] = useState("ยังไม่ได้ประเมิน");
-  const [statusText10, setStatusText10] = useState("ยังไม่ได้ประเมิน");
-  const toggleStatus = () => {
-    setStatusText((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus2 = () => {
-    setStatusText2((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus3 = () => {
-    setStatusText3((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus4 = () => {
-    setStatusText4((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus5 = () => {
-    setStatusText5((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus6 = () => {
-    setStatusText6((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus7 = () => {
-    setStatusText7((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus8 = () => {
-    setStatusText8((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus9 = () => {
-    setStatusText9((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
-  const toggleStatus10 = () => {
-    setStatusText10((prev) => (prev === "ยังไม่ได้ประเมิน" ? "ส่งประเมินแล้ว" : "ยังไม่ได้ประเมิน"));
-  };
+function ReportResk() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const handleUpload = () => {
-    if(statusText === "ประเมินแล้ว") {
-       setIsOpen(true);
-    }
-   
+    setIsOpen(true);
   };
 const data = [
     {
@@ -71,10 +28,8 @@ const data = [
       thaiid: "3820400239938",
       examDate: "3 ก.ย. 2565 10:30 น.",
       evaluationDate: "13 ก.ย. 2565 11:00 น.",
-      status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus}> {statusText}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+      status: <p className="text-[#08C054]">ผ่าน</p>,
+
     },
     {
         id: 2,
@@ -83,10 +38,7 @@ const data = [
         thaiid: "3720100669733",
         examDate: "7 ธ.ค. 2564 13.00 น.",
         evaluationDate: "22 ม.ค. 2565 09.53 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus2}> {statusText2}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText2 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#08C054]">ผ่าน</p>,
     },
     {
         id: 3,
@@ -95,10 +47,7 @@ const data = [
         thaiid: "1309900971103",
         examDate: "7 ธ.ค. 2564 13.00 น.",
         evaluationDate: "22 ม.ค. 2565 09.53 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus3}> {statusText3}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText3 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#08C054]">ผ่าน</p>,
       },
       {
         id: 4,
@@ -107,10 +56,7 @@ const data = [
         thaiid: "3729900033025",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus4}> {statusText4}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText4 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#08C054]">ผ่าน</p>,
       },
       {
         id: 5,
@@ -119,10 +65,7 @@ const data = [
         thaiid: "3101202270941",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus5}> {statusText5}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText5 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
       {
         id: 6,
@@ -131,10 +74,7 @@ const data = [
         thaiid: "3700600262306",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus6}> {statusText6}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText6 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
       {
         id: 7,
@@ -143,10 +83,7 @@ const data = [
         thaiid: "3309900937149",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus7}> {statusText7}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText7 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
       {
         id: 8,
@@ -155,10 +92,7 @@ const data = [
         thaiid: "3820400239938",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus8}> {statusText8}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText8 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
       {
         id: 9,
@@ -167,10 +101,7 @@ const data = [
         thaiid: "1110100126291",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus9}> {statusText9}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText9 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
       {
         id: 10,
@@ -179,10 +110,7 @@ const data = [
         thaiid: "1321000219441",
         examDate: "3 ก.ย. 2565 10:30 น.",
         evaluationDate: "13 ก.ย. 2565 11:00 น.",
-        status: <p className="text-[#0C7CF4] cursor-pointer transition-all duration-200 " onClick={toggleStatus10}> {statusText10}</p>,
-        edit: <FiEdit  className={`cursor-pointer transition-colors duration-200 ${
-          statusText10 === "ยังไม่ได้ประเมิน" ? "text-gray-400" : "text-[#0C7CF4]"
-        }`}  onClick={handleUpload} />,
+        status: <p className="text-[#CC383D]">ไม่ผ่าน</p>,
       },
   ];
     const [fileDescription, setFileDescription] = useState("");
@@ -191,13 +119,15 @@ const data = [
       <div className="container-fluid mx-auto px-8 mt-8">
         <div className="flex flex-row justify-between">
           <p className="text-xl font-light text-[#212264]">
-            แสดงรายชื่อผู้เข้ารับการประเมิน
+            รายงานผลการสอบเทียบโอนประสบการณ์ (Resk)
           </p>
           <div className="flex flex-row items-center gap-3">
+            <p className="text-lg font-light text-#212264]">รายงานผลการสอบเทียบโอนประสบการณ์ (Resk)</p>
+            <p className="text-lg text-[#212264]">-</p>
             <p className="text-lg font-light text-#212264]">สรุปผลการประเมิน</p>
             <p className="text-lg text-[#212264]">-</p>
             <p className="text-lg text-red-500">
-              แสดงรายชื่อผู้เข้ารับการประเมิน
+              รายงานผลการสอบเทียบโอนประสบการณ์ (Resk)
             </p>
           </div>
         </div>
@@ -249,7 +179,7 @@ const data = [
                       <th className="w-[500px] px-4 py-2 border-l border-gray-300 text-center text-white">
                         ชื่อ-นามสกุล
                       </th>
-                      <th className="w-[500px] px-4 py-2 border-l border-gray-300 text-center text-white">
+                      <th className="w-[560px] px-4 py-2 border-l border-gray-300 text-center text-white">
                         เลขบัตรประชาชน
                       </th>
                       <th className="px-4 py-2 border-l border-gray-300 text-center text-white">
@@ -260,9 +190,6 @@ const data = [
                       </th>
                       <th className="px-4 py-2 border-l border-gray-300 text-center text-white">
                         สถานะ
-                      </th>
-                      <th className="px-4 py-2 border-l border-gray-300 text-center text-white">
-                        เข้าประเมิน
                       </th>
                     </tr>
                   </thead>
@@ -348,4 +275,4 @@ const data = [
   );
 }
 
-export default ShowEvaluateName;
+export default ReportResk;
