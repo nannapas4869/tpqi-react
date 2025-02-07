@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Notification() {
+function SettingFil() {
   return (
     <>
       <div className="container-fluid px-6 mx-auto bg-white h-screen w-full">
@@ -140,4 +140,4 @@ function Notification() {
   )
 }
 
-export default Notification
+export default SettingFile

@@ -1,7 +1,7 @@
 import React from "react";
 import correct from "../assets/images/correct.png";
 import miss from "../assets/images/miss.png"
-function SettingFile() {
+function Notification() {
   return (
     <>
       <div className="container-fluid px-6 mx-auto bg-white h-screen w-full">
@@ -101,4 +101,4 @@ function SettingFile() {
   );
 }
 
-export default SettingFile;
+export default Notification;
