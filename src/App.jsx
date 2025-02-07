@@ -21,8 +21,8 @@ import SaveResultIndividualReskChecker from "./pages/SaveResultIndividualReskChe
 import ReportResk from "./pages/ReportResk";
 import ReportReskChecker from "./pages/ReportReskChecker";
 import ShowEvaluator from "./pages/ShowEvaluator";
-import SettingFile from "./pages/Notification";
-import Notification from "./pages/SettingFile1";
+import SettingFile from "./pages/SettingFile";
+import Notification from "./pages/Notification";
 const Layout = () => {
   return (
     <>
